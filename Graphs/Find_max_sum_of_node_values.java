@@ -25,3 +25,30 @@ class Solution {
         
     }
 }
+//Approach 2
+class Solution {
+    //Tc=O(NlogN)
+    //Sc=O(N)
+    public long maximumValueSum(int[] nums, int k, int[][] edges) {
+        long sum=0;
+        List<Integer> ls=new ArrayList<>();
+        for(int x:nums)
+        {
+            sum+=x;
+            int xor=x^k;
+            int profit=xor-x;
+            ls.add(profit);
+        }
+        Collections.sort(ls,Collections.reverseOrder());
+        for(int i=0;i<ls.size()-1;i+=2)
+        {
+            if(ls.get(i)+ls.get(i+1)>0)
+            {
+                sum+=ls.get(i)+ls.get(i+1);
+            }
+        }
+        return sum;
+        
+        
+    }
+}
