@@ -82,7 +82,7 @@ class Solution {
             indegree[v]++;
             adj.computeIfAbsent(u,k->new ArrayList<>()).add(v);
         }
-                Bfs(adj,indegree,res);
+        Bfs(adj,indegree,res);
                 
        
         return res;
