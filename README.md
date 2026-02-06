@@ -1,1 +1,1 @@
-# Striver
+The Striver A-Z DSA Sheet is a complete, step-by-step roadmap to master Data Structures & Algorithms from zero to advanced level. It’s curated by Striver (Take U Forward) and is super popular among students preparing for coding interviews, placements, and competitive programming.
