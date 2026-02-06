@@ -14,9 +14,7 @@ class Solution {
                 }
                 else{
                     res.get(res.size()-1)[1]=Math.max(res.get(res.size()-1)[1],end);
-                     
-                }
-           
+                }   
         }
         return res;
     }
